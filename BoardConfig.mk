@@ -117,4 +117,7 @@ BOARD_USES_METADATA_PARTITION := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 -include vendor/xiaomi/fleur/BoardConfigVendor.mk
