@@ -114,4 +114,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibi
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 -include vendor/xiaomi/fleur/BoardConfigVendor.mk
