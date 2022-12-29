@@ -146,6 +146,11 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@2.0.vendor
     
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
