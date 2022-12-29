@@ -168,6 +168,9 @@ PRODUCT_PACKAGES += \
     fstab.mt6781 \
     ueventd.qcom.rc \
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
