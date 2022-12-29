@@ -1,9 +1,6 @@
 DEVICE_PATH := device/xiaomi/fleur
 BOARD_VENDOR := xiaomi
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2022-04-01
-
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -107,5 +104,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
+# Security patch level
+BOARD_VNDK_VERSION := current
+VENDOR_SECURITY_PATCH := 2022-04-01
 
 -include vendor/xiaomi/fleur/BoardConfigVendor.mk
