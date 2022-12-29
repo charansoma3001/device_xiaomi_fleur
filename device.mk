@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
+    libsuspend \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
