@@ -125,6 +125,9 @@ BOARD_MAIN_PARTITION_LIST := \
 	vendor \
 	product \
 
+# Partitions Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
