@@ -50,7 +50,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # APN
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
-    
+
 # Dynamic partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -58,6 +58,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
 
 #ImsInit
 PRODUCT_PACKAGES += \
