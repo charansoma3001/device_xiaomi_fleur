@@ -4,6 +4,9 @@ BOARD_VENDOR := xiaomi
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-04-01
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
