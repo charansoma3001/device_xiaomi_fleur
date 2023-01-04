@@ -122,6 +122,9 @@ PRODUCT_COPY_FILES += \
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
+# Properties
+-include $(DEVICE_PATH)/system_prop.mk
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     factory_init.connectivity.rc \
