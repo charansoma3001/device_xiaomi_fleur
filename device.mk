@@ -144,6 +144,11 @@ PRODUCT_CHARACTERISTICS := default
 # Properties
 -include $(DEVICE_PATH)/system_prop.mk
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power.stats@1.0-service.mock
+    
 # Ramdisk
 PRODUCT_PACKAGES += \
     factory_init.connectivity.rc \
