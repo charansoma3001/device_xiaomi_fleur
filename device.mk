@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
-    
+
 #ImsInit
 PRODUCT_PACKAGES += \
     ImsInit
@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.mediatek
 
 # Media
 PRODUCT_COPY_FILES += \
