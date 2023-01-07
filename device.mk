@@ -90,7 +90,12 @@ PRODUCT_PACKAGES += \
 #ImsInit
 PRODUCT_PACKAGES += \
     ImsInit
-    
+
+# IDC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
+    $(LOCAL_PATH)/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-goodix.idc
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
@@ -188,6 +193,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3 \
     android.hardware.radio@1.4 \
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    SettingsOverlayFleur \
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -232,5 +241,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+    
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
